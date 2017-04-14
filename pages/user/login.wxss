@@ -1,0 +1,84 @@
+.login-form {
+	width: 570rpx;
+	position: relative;
+	margin:auto;
+	margin-top: 86rpx;
+}
+.login-form > view {
+	border-bottom: 1rpx solid #e6e6e6;
+	position: relative;
+	width: 100%;
+	padding: 11rpx 0 11rpx 96rpx;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.login-form .username-wrapper {
+	margin-bottom: 34rpx;
+}
+.login-form .username-icon {
+	width: 24rpx;
+	height: 34rpx;
+	position: absolute;
+	left: 35rpx;
+	top: 50%;
+	margin-top: -17rpx;	
+}
+.login-form .pwd-icon {
+	width: 34rpx;
+	height: 34rpx;
+	position: absolute;
+	left: 30rpx;
+	top: 50%;
+	margin-top: -17rpx;	
+}
+.login-form input {
+	font-size: 30rpx;
+	color: #333;
+}
+.login-form .eye-icon {
+	width: 30rpx;
+	height: 30rpx;
+	position: absolute;
+	right: 30rpx;
+	top: 50%;
+	margin-top: -15rpx;	
+	z-index: 99;
+}
+
+.btn-wrapper {
+	width: 570rpx;
+	margin: auto;
+	margin-top: 100rpx;
+}
+.btn-wrapper .logining, .btn-wrapper .login-btn {
+	width: 100%;
+	height: 84rpx;
+	line-height: 84rpx;
+	font-size: 34rpx;
+	color: #fff;
+	background-color: #fc0;
+	border-radius: 8rpx;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 32rpx;
+	display:block;
+	border: none !important;
+}
+
+.btn-wrapper .logining:after {
+	border: none !important;
+}
+
+.btn-wrapper .registe-btn {
+	float:left;
+	font-size: 24rpx;
+	color: #fab600;
+}
+.btn-wrapper .resetpwd-btn {
+	float: right;
+	font-size: 24rpx;
+	color: #fab600;
+}
+
+
+

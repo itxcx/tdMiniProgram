@@ -1,12 +1,14 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/user/login",
+    "pages/user/registe",
+    "pages/user/resetpwd",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#fec434",
+    "navigationBarTitleText": "团贷网",
+    "navigationBarTextStyle":"white"
   }
 }

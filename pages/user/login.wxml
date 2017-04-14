@@ -1,0 +1,23 @@
+<view class="pages">
+  <view class="login-form">
+	  <view class="username-wrapper">
+	  	<image class="username-icon" src="../../images/login_icon_phone.png" mode="aspectFit"></image>
+	  	<input type="text" bindinput="onUserNameInput" placeholder="请输入手机号码/用户名" placeholder-style="color:#ccc" maxlength="25" focus="{{true}}"/>
+	  </view>
+
+	  <view class="pwd-wrapper">
+	  	<image class="pwd-icon" src="../../images/login_icon_password.png" mode="aspectFit"></image>
+	  	<input type="text" password="{{!isShowPwd}}" bindinput="onPwdInput" placeholder="请输入登录密码" placeholder-style="color:#ccc" maxlength="16"/>
+
+	  	<image class="eye-icon eye-icon-on" wx:if="{{isShowPwd}}" data-type="on" bindtap="onToggleShowPwd" src="../../images/login_icon_visible.png" mode="aspectFit"></image>
+	  	<image class="eye-icon eye-icon-off" wx:else data-type="off" bindtap="onToggleShowPwd" src="../../images/login_icon_invisible.png" mode="aspectFit"></image>
+	  </view>
+ 	</view>
+
+	<view class="btn-wrapper">
+		<button class="logining" wx:if="{{isLogining}}" loading="{{true}}"> 正在登录中…</button>
+		<botton class="login-btn" wx:else bindtap="onLogin">登录</botton>
+		<botton class="registe-btn" bindtap="goRegister">注册</botton>
+		<botton class="resetpwd-btn" bindtap="goResetPwd">忘记密码</botton>
+	</view>
+</view>
