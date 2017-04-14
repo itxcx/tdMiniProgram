@@ -8,12 +8,14 @@
 	border-bottom: 1rpx solid #e6e6e6;
 	position: relative;
 	width: 100%;
-	padding: 11rpx 0 11rpx 96rpx;
+	height: 80rpx;
+	/*padding: 11rpx 0 11rpx 96rpx;*/
+	padding-left: 96rpx;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
 .login-form .username-wrapper {
-	margin-bottom: 34rpx;
+	margin-bottom: 36rpx;
 }
 .login-form .username-icon {
 	width: 24rpx;
@@ -34,6 +36,10 @@
 .login-form input {
 	font-size: 30rpx;
 	color: #333;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%); 
+	transform: translateY(-50%);
 }
 .login-form .eye-icon {
 	width: 30rpx;
