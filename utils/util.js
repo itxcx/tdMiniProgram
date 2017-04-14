@@ -16,6 +16,12 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+// 检查手机号码是否有效
+function checkPhoneNum(number) {
+  let reg = /^1(3|4|5|7|8)\d{9}$/;
+  return reg.test(number) ? true : false;
+}
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  checkPhoneNum: checkPhoneNum
 }
