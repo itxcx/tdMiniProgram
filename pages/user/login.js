@@ -81,7 +81,7 @@ Page({
   //跳转至忘记密码页面 
   goResetPwd: function() {
     wx.navigateTo({
-      url: '../user/resetpwd'
+      url: '../user/forgetpwd'
     })
   },
 

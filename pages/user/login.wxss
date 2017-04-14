@@ -62,10 +62,8 @@
 	margin: auto;
 	margin-bottom: 32rpx;
 	display:block;
-	border: none !important;
 }
-
-.btn-wrapper .logining:after {
+.btn-wrapper .logining:after, .btn-wrapper .login-btn:after {
 	border: none !important;
 }
 
@@ -73,11 +71,21 @@
 	float:left;
 	font-size: 24rpx;
 	color: #fab600;
+	height: 24rpx;
+	line-height: 24rpx;
+	border: none !important;
 }
 .btn-wrapper .resetpwd-btn {
 	float: right;
 	font-size: 24rpx;
 	color: #fab600;
+	height: 24rpx;
+	line-height: 24rpx;
+	border: none !important;
+}
+
+.btn-wrapper .registe-btn:after, .btn-wrapper .resetpwd-btn:after {
+	border: none !important;
 }
 
 

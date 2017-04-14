@@ -1,4 +1,7 @@
 /**app.wxss**/
+page {
+	height: 100%;
+}
 .pages {
   	font-family: PingFang SC Regular;
  	box-sizing:border-box;

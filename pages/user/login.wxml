@@ -16,8 +16,8 @@
 
 	<view class="btn-wrapper">
 		<button class="logining" wx:if="{{isLogining}}" loading="{{true}}"> 正在登录中…</button>
-		<botton class="login-btn" wx:else bindtap="onLogin">登录</botton>
-		<botton class="registe-btn" bindtap="goRegister">注册</botton>
-		<botton class="resetpwd-btn" bindtap="goResetPwd">忘记密码</botton>
+		<button class="login-btn" wx:else bindtap="onLogin">登录</button>
+		<button class="registe-btn" bindtap="goRegister" plain="true">注册</button>
+		<button class="resetpwd-btn" bindtap="goResetPwd" plain="true">忘记密码</button>
 	</view>
 </view>
