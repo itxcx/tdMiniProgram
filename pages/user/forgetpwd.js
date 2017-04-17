@@ -5,13 +5,13 @@ Page({
     verificationCode: '',
     leftTime: -1,
   },
-  // 手机号码输入绑定事件，获得手机号码
+  // 获得手机号码
   onPhoneInput: function(e) {
     this.setData({
       phone: e.detail.value
     });
   },
-  // 验证码输入绑定事件，获得验证码
+  // 获得验证码
   onVerificationInput: function(e) {
     this.setData({
       verificationCode: e.detail.value

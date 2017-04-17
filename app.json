@@ -1,8 +1,10 @@
 {
   "pages":[
-    "pages/user/login",
     "pages/user/registe",
     "pages/user/resetpwd",
+    "pages/user/forgetpwd",
+    "pages/user/login",
+  
     "pages/index/index"
   ],
   "window":{

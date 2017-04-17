@@ -1,4 +1,4 @@
-<view class="pages">
+<view class="page">
 	<view class="header">
 		<image class="header-bg" src="../../images/index_bg_top.png" mode="widthFix"></image>
 		<view class="header-content">
@@ -15,7 +15,7 @@
 	</view>
  	<view class="list">
  		<view class="list-item">
- 			<image class="item-icon" src="../../images/index_icon_record.png" mode="aspectFit"></image>
+ 			<image class="item-icon" src="../../images/icon_record.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">查看投资记录</text>
  				<text class="line-second">包含P2P投资和定期投资</text>
@@ -23,7 +23,7 @@
  			<image class="item-arrow" src="../../images/index_icon_right.png" mode="aspectFit"></image>
  		</view>
  		<view class="list-item">
- 			<image class="item-icon" src="../../images/index_icon_presentation.png" mode="aspectFit"></image>
+ 			<image class="item-icon" src="../../images/icon_presentation.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">了解团贷网</text>
  				<text class="line-second">安全可靠的投资平台</text>
@@ -31,7 +31,7 @@
  			<image class="item-arrow" src="../../images/index_icon_right.png" mode="aspectFit"></image>
  		</view>
  		<view class="list-item">
- 			<image class="item-icon" src="../../images/index_icon_wechat.png" mode="aspectFit"></image>
+ 			<image class="item-icon" src="../../images/icon_wechat.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">关注微信号</text>
  				<text class="line-second">享受更多投资服务</text>
