@@ -149,10 +149,19 @@
 	color: #ccc;
 	font-size: 24rpx;
 	text-align: center;
+	margin-bottom: 80rpx;
 }
 .agreement-wrapper text {
 	color: #fab600;
 }
 
+.footer-wrapper {
+	color: #ccc;
+	font-size: 24rpx;
+	text-align: center;	
+}
+.footer-wrapper text {
+	color: #fab600;
+}
 
 

@@ -83,5 +83,22 @@ Page({
     this.setData({
       isShowInviter: !this.data.isShowInviter
     });
+  },
+
+  // 是否显示邀请人
+  onToggleInviter: function() {
+    this.setData({
+      isShowInviter: !this.data.isShowInviter
+    });
+  },
+  // 跳转至协议页面
+  goAgreement: function() {
+
+  },
+  // 跳转至登录页面
+  goLogin: function() {
+     wx.navigateTo({
+      url: '../user/login'
+    })
   }
 })
