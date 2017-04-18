@@ -1,4 +1,3 @@
-//logs.js
 var util = require('../../utils/util.js')
 Page({
   data: {
@@ -7,7 +6,8 @@ Page({
     phone: '',
     pwd: '',
     inveter: '',
-    leftTime: -1
+    leftTime: -1,
+    isRequesting: true
   },
    // 获得手机号码
   onPhoneInput: function(e) {
@@ -93,12 +93,14 @@ Page({
   },
   // 跳转至协议页面
   goAgreement: function() {
-
+    wx.navigateTo({
+      url: '../user/agreement'
+    })
   },
   // 跳转至登录页面
   goLogin: function() {
-     wx.navigateTo({
+    wx.navigateTo({
       url: '../user/login'
-    })
+    });
   }
 })

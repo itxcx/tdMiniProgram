@@ -1,0 +1,41 @@
+.page {
+	padding: 60rpx 30rpx;
+	padding-bottom: 100rpx;
+}
+.agreement-module {
+	position: relative;
+	margin-bottom: 91rpx;
+}
+.agreement-module:last-child {
+	margin-bottom: 0;
+}
+.agreement-module .module-title {
+	margin-bottom: 51rpx;
+}
+.agreement-module .title-line {
+	width: 34rpx;
+	height: 6rpx;
+  	background-color: #333;
+  	margin-bottom: 20rpx;
+}
+.agreement-module .module-title text {
+	font-size: 36rpx;
+	color: #333;
+}
+.agreement-module .agreement-item {
+	font-size: 30rpx;
+	line-height: 48rpx;
+	color: #666;
+	text-align: justify;
+	margin-bottom: 51rpx;
+}
+
+.agreement-module .agreement-item:last-child {
+	margin-bottom: 0;
+}
+.agreement-footer {
+	margin-top: 151rpx;
+	font-size: 30rpx;
+	color: #333;
+	text-align:right;
+}

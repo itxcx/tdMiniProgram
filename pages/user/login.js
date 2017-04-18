@@ -1,4 +1,3 @@
-
 Page({
   data: {
     isShowPwd: false,

@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/user/agreement",
     "pages/user/registe",
+
     "pages/user/resetpwd",
     "pages/user/forgetpwd",
     "pages/user/login",

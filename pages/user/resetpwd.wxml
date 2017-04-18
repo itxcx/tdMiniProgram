@@ -9,5 +9,5 @@
 			<input type="text" bindinput="onRePwdInput" maxlength="16" placeholder="请再次输入新密码" placeholder-style="color:#ccc" password="{{true}}"/>
 		</view>
 	</view>
-	<button class="submit-btn" bindtap="onSubmit" loading="{{isRequesting}}">{{hasSpace}}提交更新</button>
+	<button class="submit-btn" bindtap="onSubmit" loading="{{isRequesting}}">{{isRequesting? " ": ""}}提交更新</button>
 </view>

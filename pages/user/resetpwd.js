@@ -1,11 +1,8 @@
-//logs.js
-var util = require('../../utils/util.js')
 Page({
   data: {
     pwd: '',
     rePwd: '',
-    isRequesting: false,
-    hasSpace:""
+    isRequesting: false
   },
   // 新密码输入绑定事件，获得新密码
   onPwdInput: function(e) {
@@ -58,8 +55,7 @@ Page({
     // TODO:请求接口
     // wx.request();
     this.setData({
-      isRequesting: true,
-      hasSpace: " "
+      isRequesting: true
     });
     
      
