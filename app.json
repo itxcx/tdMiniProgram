@@ -1,13 +1,15 @@
 {
   "pages":[
+   "pages/index/index",
+  "pages/concernwx/index",
+   "pages/user/agreement",
     "pages/user/agreement",
     "pages/user/registe",
-
     "pages/user/resetpwd",
     "pages/user/forgetpwd",
-    "pages/user/login",
+    "pages/user/login"
   
-    "pages/index/index"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",

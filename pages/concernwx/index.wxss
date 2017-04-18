@@ -1,0 +1,16 @@
+.page {
+	background-color: #faeec3;
+	height: 100%;
+}
+image {
+	display: block;
+	width: 100%;
+}
+.icon01 {
+	padding: 68rpx 0 28rpx 0;
+  background: #fb755c;
+  text-align: center;
+}
+.icon04 {
+	margin-top: 100rpx;
+}

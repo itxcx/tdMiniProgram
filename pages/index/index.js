@@ -12,9 +12,14 @@ Page({
   goLogin: function() {
     wx.navigateTo({
       url: '../user/login'
-    })
+    });
   },
-
+  // 跳转至关注微信公众号
+  goConcernwx: function() {
+    wx.navigateTo({
+      url: '../concernwx/index'
+    });
+  },
   onLoad: function () {
     console.log('onLoad')
    

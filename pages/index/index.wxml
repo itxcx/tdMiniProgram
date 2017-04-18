@@ -14,14 +14,14 @@
 		</view>		
 	</view>
  	<view class="list">
- 		<view class="list-item">
+ 		<!-- <view class="list-item">
  			<image class="item-icon" src="../../images/icon_record.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">查看投资记录</text>
  				<text class="line-second">包含P2P投资和定期投资</text>
  			</view>
  			<image class="item-arrow" src="../../images/index_icon_right.png" mode="aspectFit"></image>
- 		</view>
+ 		</view> -->
  		<view class="list-item">
  			<image class="item-icon" src="../../images/icon_presentation.png" mode="aspectFit"></image>
  			<view class="item-text">
@@ -30,7 +30,7 @@
  			</view>
  			<image class="item-arrow" src="../../images/index_icon_right.png" mode="aspectFit"></image>
  		</view>
- 		<view class="list-item">
+ 		<view class="list-item" bindtap="goConcernwx">
  			<image class="item-icon" src="../../images/icon_wechat.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">关注微信号</text>
