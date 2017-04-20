@@ -1,0 +1,57 @@
+.page {
+	padding: 100rpx 30rpx 128rpx 30rpx;
+	box-sizing: border-box;
+}
+.detail01 {
+	margin-bottom: 126rpx;
+}
+.detail .title {
+	margin-bottom: 50rpx;
+	font-size: 0;
+}
+.detail .title .title-icon {
+	width: 20rpx;
+	height: 20rpx;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ff9920;
+	margin-right: 30rpx;
+}
+.detail .title text {
+	font-size: 48rpx;
+	color: #ff9920;
+	display: inline-block;
+	vertical-align: middle;
+}
+.detail01 .detail-content {
+	font-size: 32rpx;
+	line-height: 60rpx;
+	text-indent: 60rpx;
+	color: #333;
+	text-align: justify;
+}
+
+.detail02 .title {
+	margin-bottom: 80rpx;
+}
+.detail02 .detail-content {
+	margin-bottom: 64rpx;
+}
+.detail02 .detail-content:last-child {
+	margin-bottom: 0;
+}
+.detail02 .detail-title {
+	margin-bottom: 16rpx;
+}
+.detail02 .detail-title text {
+	font-size: 32rpx;
+	color: #333;
+}
+.detail02 .detail-title .date {
+	margin-right: 46rpx;
+}
+.detail02 .desc {
+	font-size: 28rpx;
+	line-height: 60rpx;
+	color: #999;
+}

@@ -1,0 +1,60 @@
+<view class="page">
+	<view class="module01">
+		<view class="title">
+			<image class="quote l-quote" src="../../images/icon_quote.png" mode="aspectFit"></image>
+			<text>团贷网，安全合规的理财平台</text>
+			<image class="quote r-quote" src="../../images/icon_quote.png" mode="aspectFit"></image>
+		</view>
+		<view class="module-content01">东莞团贷网互联网科技服务有限公司成立于2011年，并于2012年正式上线运营专注于小微企业融资服务的互联网金融信息平台—团贷网，2013年11月顺利完成股份制改造，成为国内首家注册资本一亿元的股份制互联网金融公司。</view>
+		<view class="module-content02" style="height:{{isShowMore ? 'auto':'0'}};display:{{isShowMore ? 'block' : 'none'}}">2015年6月，团贷网完成由国内著名投资机构九鼎投资领投、巨人投资、久奕投资和沈宁晨等跟投的B轮2亿元人民币的融资。2016年10月，团贷网完成由宏商光影领投的C轮3.75亿元人民币的融资，至此，团贷网ABC轮融资已累计达到6.75亿元人民币，投资机构涵括了风投系、国资系、创业系、上市系机构。</view>
+		<view class="toggleText" bindtap="onToggleText">
+			<text>{{isShowMore ? '收起全文' : '展开全文'}}</text>
+			<image src="../../images/icon_down_arrow.png" mode="aspectFit" class="{{isShowMore ? 'up' : ''}}"></image>
+		</view>
+	</view>
+	<view class="module02">
+		<image class="icon-gradient" src="../../images/about_gradient_bg.png" mode="widthFix"></image>
+		<view class="title">
+			<view class="line"></view>
+			<text>雄厚的公司背景</text>
+		</view>
+		<view class="module-content01">
+			<view>
+				<image src="../../images/icon_bj1.png" mode="aspectFit"></image>
+				<text>三轮累计融资</text>
+			</view>
+			<view>
+				<image src="../../images/icon_bj2.png" mode="aspectFit"></image>
+				<text style="margin-bottom: 10rpx">团贷网入选广东省</text>
+				<text>“互联网+金融”试点项目</text>
+			</view>
+		</view>
+		<view class="module-content02">
+			<image src="../../images/icon_bj3.png" mode="aspectFit"></image>
+			<text>中国互联网金融协会首批会员单位</text>
+		</view>
+		<view class="module-content03" bindtap="goMoreBackground">
+			<text>了解更多公司背景</text>
+			<image src="../../images/icon_down_arrow.png" mode="aspectFit"></image>
+		</view>
+		<image class="bg" src="../../images/about_bg1.png" mode="widthFix"></image>	
+	</view>
+	<view class="module0e">
+		<view class="bg-gradient"></view>
+		<view class="title">
+			<view class="line"></view>
+			<text>股东机构加盟</text>
+		</view>
+		<view class="module-content01">
+			团贷网三轮融资中，投资方涵括了风投系、国资系、创业系、上市系等机构。优质股东的加盟，为团贷网开启新的发展快车道。相信团贷网也将依托各大投资方雄厚的资金支持、优质的金融资源、缜密的风控体系，打造更强的互联网金融品牌。
+		</view>
+		<view class="module-content02">
+			<view class=""></view>
+		</view>
+		<view class="module-content03" bindtap="goMoreBackground">
+			<text>了解更多公司背景</text>
+			<image src="../../images/icon_down_arrow.png" mode="aspectFit"></image>
+		</view>
+		<image class="bg" src="../../images/about_bg1.png" mode="widthFix"></image>	
+	</view>
+</view>

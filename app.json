@@ -1,8 +1,11 @@
 {
   "pages":[
-   "pages/index/index",
-  "pages/concernwx/index",
-   "pages/user/agreement",
+    "pages/index/index",
+    "pages/about/background",
+    "pages/about/index",
+    
+    
+    "pages/concernwx/index",
     "pages/user/agreement",
     "pages/user/registe",
     "pages/user/resetpwd",

@@ -6,10 +6,14 @@ image {
 	display: block;
 	width: 100%;
 }
-.icon01 {
-	padding: 68rpx 0 28rpx 0;
-  background: #fb755c;
-  text-align: center;
+.banner {
+	padding: 68rpx 0rpx 28rpx 0rpx;
+	background: #fb755c;
+	text-align: center;
+}
+.banner .icon01 {
+	width: 661rpx;
+	margin:auto;
 }
 .icon04 {
 	margin-top: 100rpx;

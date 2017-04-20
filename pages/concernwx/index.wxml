@@ -1,5 +1,7 @@
 <view class="page">
-	<image  src="../../images/icon_concernwx_01.png" mode="widthFix" class="icon01"></image>
+	<view class="banner">
+		<image  src="../../images/icon_concernwx_01.png" mode="widthFix" class="icon01"></image>
+	</view>
 	<image  src="../../images/icon_concernwx_02.png" mode="widthFix" class="icon02"></image>
 	<image  src="../../images/icon_concernwx_03.png" mode="widthFix" class="icon03"></image>
 	<image  src="../../images/icon_concernwx_04.png" mode="widthFix" class="icon04"></image>

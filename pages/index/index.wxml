@@ -22,7 +22,7 @@
  			</view>
  			<image class="item-arrow" src="../../images/index_icon_right.png" mode="aspectFit"></image>
  		</view> -->
- 		<view class="list-item">
+ 		<view class="list-item" bindtap="goAbout">
  			<image class="item-icon" src="../../images/icon_presentation.png" mode="aspectFit"></image>
  			<view class="item-text">
  				<text class="line-first">了解团贷网</text>

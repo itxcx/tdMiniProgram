@@ -1,0 +1,50 @@
+<view class="page">
+	<view class="detail detail01">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>公司概况</text>
+		</view>
+		<view class="detail-content">
+			东莞团贷网互联网科技服务有限公司（以下简称“团贷网平台”），隶属于北京光影侠数码科技股份有限公司。
+		</view>
+		<view class="detail-content">
+			团贷网平台于2012年上线运营，是一家专注于帮扶小微企业投融资的信息中介平台，曾先后获得年度卓越P2P平台、年度普惠金融卓越品牌等荣誉奖项。
+		</view>
+		<view class="detail-content">
+			团贷网平台的项目，90%来自于光影侠旗下子公司、兄弟企业——深圳正合普惠金融有限公司、东莞团贷网资产管理有限公司。目前，这两家公司已在华北、华中、华东、西南、华南地区相继开设分公司，在营业和试营业的分公司网点近200家。未来，两家资产端子公司将依据计划积极推动下一步战略实施，最终完成覆盖全国的网点布局。
+		</view>
+		<view class="detail-content">
+			经过四年多的发展，团贷网所在集团已逐渐成长为一家持牌经营的综合金融服务集团。集团业务分为资产端和互联网端，资产端基本涵盖了小微企业、供应链金融、小额信贷、消费分期、仓储物流、三农经济等领域。互联网端将启用主域名tdw.cn，成为一个综合流量入口，为旗下P2P板块、私募基金、代销基金、保险经纪业务、金融资产交易所、网络小贷等业务引流。其中，P2P板块即团贷网平台（tuandai.com），是团贷网集团重要的业务板块之一。
+		</view>
+		<view class="detail-content">
+			2017年3月12日，团贷网联手厦门银行打造的银行存管系统已对接完成、正式上线，合规进程提速。
+		</view>
+	</view>
+	<view class="detail detail02">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>三轮累计融资6.75亿元</text>
+		</view>
+		<view class="detail-content">
+			<view class="detail-title">
+				<text class="date">2013年11月</text>
+				<text>A轮获1亿融资</text>
+			</view>
+			<view class="desc">团贷网成为国内首家注册资本1亿元的股份制互联网金融公司。</view>
+		</view>
+		<view class="detail-content">
+			<view class="detail-title">
+				<text class="date">2015年6月</text>
+				<text>B轮获2亿融资</text>
+			</view>
+			<view class="desc">由九鼎投资领投，巨人投资、久奕投资等跟投。</view>
+		</view>
+		<view class="detail-content">
+			<view class="detail-title">
+				<text class="date">2016年10月</text>
+				<text>C轮获3.7亿融资</text>
+			</view>
+			<view class="desc">由宏商资本、东莞证券、唯一网络领投。</view>
+		</view>
+	</view>
+</view>

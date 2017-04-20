@@ -14,6 +14,12 @@ Page({
       url: '../user/login'
     });
   },
+  // 跳转至了解团贷网
+  goAbout: function() {
+    wx.navigateTo({
+      url: '../about/index'
+    });
+  },
   // 跳转至关注微信公众号
   goConcernwx: function() {
     wx.navigateTo({
