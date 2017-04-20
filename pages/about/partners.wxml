@@ -1,0 +1,8 @@
+<view class="page">
+	<view class="partners">
+		<view class="partner" wx:for="{{partners}}">
+			<image src="{{item.img}}" mode="aspectFit"></image>
+			<view class="name">{{item.name}}</view>
+		</view>
+	</view>
+</view>

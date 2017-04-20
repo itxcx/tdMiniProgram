@@ -39,7 +39,7 @@
 		</view>
 		<image class="bg" src="../../images/about_bg1.png" mode="widthFix"></image>	
 	</view>
-	<view class="module0e">
+	<view class="module03">
 		<view class="bg-gradient"></view>
 		<view class="title">
 			<view class="line"></view>
@@ -49,12 +49,17 @@
 			团贷网三轮融资中，投资方涵括了风投系、国资系、创业系、上市系等机构。优质股东的加盟，为团贷网开启新的发展快车道。相信团贷网也将依托各大投资方雄厚的资金支持、优质的金融资源、缜密的风控体系，打造更强的互联网金融品牌。
 		</view>
 		<view class="module-content02">
-			<view class=""></view>
+			<view class="gd" wx:for="{{partners}}">
+				<image src="{{item.img}}" mode="aspectFit"></image>
+				<view class="gd-desc">{{item.desc}}</view>
+			</view>
 		</view>
-		<view class="module-content03" bindtap="goMoreBackground">
-			<text>了解更多公司背景</text>
-			<image src="../../images/icon_down_arrow.png" mode="aspectFit"></image>
+		<view class="module-content03" bindtap="goPartners">
+			<image src="../../images/about_lk_bg1.png" mode="widthFix" class="partner-bg"></image>
+			<view>
+				<text>查看合作机构</text>
+				<image src="../../images/about_icon_right.png" mode="aspectFit"></image>
+			</view>
 		</view>
-		<image class="bg" src="../../images/about_bg1.png" mode="widthFix"></image>	
 	</view>
 </view>

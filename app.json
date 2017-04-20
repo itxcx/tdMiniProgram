@@ -1,17 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/about/background",
     "pages/about/index",
-    
-    
-    "pages/concernwx/index",
+    "pages/about/background",
+    "pages/about/partners",
     "pages/user/agreement",
+    "pages/user/login",
     "pages/user/registe",
-    "pages/user/resetpwd",
     "pages/user/forgetpwd",
-    "pages/user/login"
-  
+    "pages/user/resetpwd",
+    "pages/concernwx/index"
    
   ],
   "window":{

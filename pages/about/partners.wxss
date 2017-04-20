@@ -1,0 +1,25 @@
+.page {
+	padding: 68rpx 0 48rpx;
+	min-height: 100%;
+	background-color: #f5f5f5;
+}
+.partners {
+	font-size: 0;
+}
+.partner {
+	margin-bottom: 64rpx;
+	width: 33.333%;
+	display: inline-block;
+}
+.partner image {
+	width: 200rpx;
+	height: 110rpx;
+	margin: auto;
+	margin-bottom: 20rpx;
+	display: block;
+}
+.partner .name {
+	font-size: 24rpx;
+	color: #333;
+	text-align: center;
+}
