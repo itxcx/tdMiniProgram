@@ -49,7 +49,7 @@
 			团贷网三轮融资中，投资方涵括了风投系、国资系、创业系、上市系等机构。优质股东的加盟，为团贷网开启新的发展快车道。相信团贷网也将依托各大投资方雄厚的资金支持、优质的金融资源、缜密的风控体系，打造更强的互联网金融品牌。
 		</view>
 		<view class="module-content02">
-			<view class="gd" wx:for="{{partners}}">
+			<view class="gd" wx:for="{{gdList}}">
 				<image src="{{item.img}}" mode="aspectFit"></image>
 				<view class="gd-desc">{{item.desc}}</view>
 			</view>
@@ -61,5 +61,93 @@
 				<image src="../../images/about_icon_right.png" mode="aspectFit"></image>
 			</view>
 		</view>
+	</view>
+	<view class="module04">
+		<view class="title">
+			<view class="line"></view>
+			<text>质保专款，专为你的安全服务</text>
+		</view>
+		<view class="module-content01">
+			“质量保障服务”是团贷网为保障用户资金安全而设立的风险备付制度，当借款项目出现逾期或坏账时，系统将自动垫付，且该质保服务专款会根据平台待收的增加而动态调整。
+		</view>
+		<view class="module-content02">
+			<view class="warranty-item">
+				<view><text>8</text><text>千万</text></view>
+				<text>质量保障专款</text>
+			</view>
+			<view class="warranty-item">
+				<image src="../../images/about_warranty1.png" mode="aspectFit"></image>
+				<text>逾期垫付，保障服务质量</text>
+			</view>
+			<view class="warranty-item">
+				<image src="../../images/about_warranty2.png" mode="aspectFit"></image>
+				<text>银行存管，公开透明</text>
+			</view>
+			<view class="warranty-item">
+				<image src="../../images/about_warranty3.png" mode="aspectFit"></image>
+				<text>每月增补，风险全覆盖</text>
+			</view>
+		</view>
+	</view>
+	<view class="module05">
+		<image class="icon-gradient" src="../../images/about_gradient_bg.png" mode="widthFix"></image>
+		<view class="title">
+			<view class="line"></view>
+			<text>安心投资，安全最重要</text>
+		</view>
+		<view class="module-content01">
+			在团贷网投资，可享受平台资金第三方存管、多层次业务架构审核、第三方担保机构垫付和专业的风控团队把关，让您的投资享有强而有力的保障。
+		</view>
+		<view class="module-content02">
+			<view class="security-item">
+				<image src="../../images/about_security1.png" mode="aspectFit"></image>
+				<text>严格风控</text>
+			</view>
+			<view class="security-item">
+				<image src="../../images/about_security2.png" mode="aspectFit"></image>
+				<text>国家公安部信息安全三级认证</text>
+			</view>
+			<view class="security-item">
+				<image src="../../images/about_security3.png" mode="aspectFit"></image>
+				<text>合法合规</text>
+			</view>
+		</view>
+		<view class="module-content03" bindtap="goMoreSecurity">
+			<text>了解更多安全保障</text>
+			<image src="../../images/icon_down_arrow.png" mode="aspectFit"></image>
+		</view>
+		<image class="bg" src="../../images/about_bg2.png" mode="widthFix"></image>	
+	</view>
+	<view class="module06">
+		<view class="title">
+			<view class="line"></view>
+			<text>平台靠谱，成绩斐然</text>
+		</view>
+		<view class="module-content01">
+			从0到100亿，我们用了3年零5个月，资产端全国战略布局，打牢基础，厚积薄发；从100亿到300亿，我们用了9个月零27天，品牌战略升级，全面转型为综合持牌金服集团；从300亿到500亿，我们用了4个月零14天。
+		</view>
+		<view class="module-content02">
+			<view class="performance-item">
+				<view><text>5</text>年</view>
+				<view>安全运营时间</view>
+			</view>
+			<view class="performance-item">
+				<view><text>417</text>万</view>
+				<view>注册用户数量</view>
+			</view>
+			<view class="performance-item">
+				<view><text>482</text>亿</view>
+				<view>总交易金额</view>
+			</view>
+			<view class="performance-item">
+				<view><text>28</text>亿</view>
+				<view>用户赚取收益</view>
+			</view>
+		</view>
+		<view class="btn-wrapper">
+			<button class="btn-registe" bindtap="goRegiste">加入团贷网</button>
+			<button class="btn-concernwx" bindtap="goConcernwx">微信关注团贷网</button>
+		</view>
+		<image class="bg" src="../../images/about_bg3.png" mode="widthFix"></image>	
 	</view>
 </view>

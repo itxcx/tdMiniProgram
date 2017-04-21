@@ -1,0 +1,48 @@
+<view class="page">
+	<view class="detail detail01">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>百人风控团队</text>
+		</view>
+		<view class="detail-content">
+			团贷网建立了规模超百人的风控团队，团队成员均来自国内各大银行等金融机构，从风控体系建立到执行，从贷前审查到贷后管理等专业领域都有着非常丰富的经验。
+		</view>
+	</view>
+	<view class="detail detail02">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>足额抵押担保物</text>
+		</view>
+		<view class="detail-content">
+			团贷网的项目借款除由担保机构提供保障外，更有借款人提供的足额抵押物进行担保，抵押额度一般为其评估价值的70%，以降低抵押物价值波动的风险。
+		</view>
+	</view>
+	<view class="detail detail03">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>信息安全等级第三级认证</text>
+		</view>
+		<view class="detail-content">
+			团贷网已成功通过中华人民共和国公安部信息安全等级第三级认证，相当于国有四大银行的信息系统安全评级，为用户资金及个人信息提供360度无死角的信息安全保障。
+		</view>
+	</view>
+	<view class="detail detail04">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>专业法律支持</text>
+		</view>
+		<view class="detail-content">
+			团贷网已成功通过中华人民共和国公安部信息安全等级第三级认证，相当于国有四大银行的信息系统安全评级，为用户资金及个人信息提供360度无死角的信息安全保障。
+		</view>
+	</view>
+	<view class="detail detail05">
+		<view class="title">
+			<view class="title-icon"></view>
+			<text>平台合规经营</text>
+		</view>
+		<view class="detail-content">
+			根据《合同法》第23章关于“居间合同”的规定，特别是第424条规定的“居间合同是居间人向委托人报告订立合同的机会或者提供订立合同的 媒介服务，委托人支付报酬的合同”，团贷网平台作为合法设立的中介服务机构，为民间借贷提供撮合，使借贷双方形成借贷关系并收取相关报 酬的居间服务有着明确的法律基础。
+		</view>
+	</view>
+
+</view>

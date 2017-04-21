@@ -276,3 +276,275 @@
 	width: 12rpx;
 	height: 21rpx;
 }
+
+.module04 {
+	position: relative;
+	padding: 112rpx 40rpx 0rpx;
+	box-sizing: border-box;
+}
+
+.module04 .title {
+	position: relative;
+	margin-bottom: 70rpx;
+}
+.module04 .title .line {
+	position: relative;
+	width: 60rpx;
+	height: 12rpx;
+	background-color: #333;
+	margin: auto;
+	z-index: 99;
+	margin-bottom: 28rpx;
+}
+.module04 .title text {
+	color: #333;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	font-size: 60rpx;
+	line-height: 90rpx;
+	font-weight: bold;
+	margin: auto;
+	display: block;
+	width: 540rpx;
+}
+.module04 .module-content01 {
+	font-size: 30rpx;
+	line-height: 60rpx;
+	color: #333;
+	margin-bottom: 75rpx;
+}
+.module04 .module-content02 {
+	font-size: 0;
+	position: relative;
+}
+.module04 .module-content02 .warranty-item {
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 100rpx;
+}
+.module04 .module-content02 .warranty-item > view {
+	
+	text-align: center;
+}
+.module04 .module-content02 .warranty-item > view text {
+	color: #ff9920;
+	font-size: 36rpx;
+}
+.module04 .module-content02 .warranty-item > view text:first-child {
+	font-size: 72rpx;
+	margin-right: 6rpx;
+}
+.module04 .module-content02 .warranty-item > text {
+	font-size: 22rpx;
+	color: #333;
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-top: 50rpx;
+}
+.module04 .module-content02 .warranty-item > image {
+	width: 108rpx;
+	height: 78rpx;
+	display: block;
+	margin: auto;
+}
+
+.module05 {
+	position: relative;
+	padding: 100rpx 40rpx 454rpx;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.module05 .icon-gradient {
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	top: 0;
+	left: 0;
+}
+.module05 .title {
+	margin-bottom: 90rpx;
+}
+.module05 .title .line {
+	position: relative;
+	width: 60rpx;
+	height: 12rpx;
+	background-color: #333;
+	margin: auto;
+	z-index: 99;
+	margin-bottom: 42rpx;
+}
+.module05 .title text {
+	color: #333;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	font-size: 60rpx;
+	font-weight: bold;
+	margin: auto;
+	display: block;
+}
+.module05 .module-content01 {
+	position: relative;
+	font-size: 30rpx;
+	line-height: 60rpx;
+	color: #333;
+	margin-bottom: 92rpx;
+}
+.module05 .module-content02 {
+	position: relative;
+	font-size: 0;
+	text-align: justify;
+	margin-bottom: 68rpx;
+}
+.module05 .module-content02 .security-item {
+	width: 33.333%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+.module05 .security-item image {
+	width: 81rpx;
+	height: 84rpx;
+	display: block;
+	margin: auto;
+	margin-bottom: 24rpx;
+}
+.module05 .security-item text {
+	color: #333;
+	font-size: 22rpx;
+	line-height: 36rpx;
+	text-align: center;
+	margin: auto;
+	width: 160rpx;
+	display: block;
+}
+.module05 .module-content03 {
+	position: relative;
+	font-size: 0;
+	z-index: 99;
+	text-align: center;
+}
+.module05 .module-content03 text {
+	color: #fab600;
+	vertical-align: middle;
+	font-size: 30rpx;
+}
+.module05 .module-content03 image {
+	width: 22rpx;
+	height: 12rpx;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	vertical-align: middle;
+}
+.module05  .bg {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.module06 {
+	position: relative;
+	padding: 100rpx 40rpx 136rpx;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.module06 .title {
+	margin-bottom: 90rpx;
+}
+.module06 .title .line {
+	position: relative;
+	width: 60rpx;
+	height: 12rpx;
+	background-color: #333;
+	margin: auto;
+	z-index: 99;
+	margin-bottom: 50rpx;
+}
+.module06 .title text {
+	color: #333;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	font-size: 60rpx;
+	font-weight: bold;
+	margin: auto;
+	display: block;
+}
+.module06 .module-content01 {
+	position: relative;
+	font-size: 30rpx;
+	line-height: 60rpx;
+	color: #333;
+	margin-bottom: 112rpx;
+}
+.module06 .module-content02 {
+	font-size: 0;
+}
+.module06 .performance-item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 140rpx;
+}
+.module06 .performance-item > view:first-child {
+	margin-bottom: 30rpx;
+	font-size: 36rpx;
+	text-align: center;
+	color: #ff9920;
+}
+.module06 .performance-item > view:first-child text {
+	font-size: 72rpx;
+	margin-right: 6rpx;
+}
+.module06 .performance-item > view:nth-child(2) {
+	font-size: 22rpx;
+	text-align: center;
+	color: #333;
+}
+.module06 .btn-wrapper {
+	position: absolute;
+	bottom: 50rpx;
+	left: 40rpx;
+	right: 40rpx;
+	z-index: 99;
+	height: 90rpx;
+}
+.module06 .btn-wrapper .btn-registe {
+	position: absolute;
+	left: 0;
+	width: 316rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	background-color: rgba(255, 197, 23, .9);
+	border-radius: 10rpx;
+	text-align: center;
+	font-size: 30rpx;
+	color: #fff;
+}
+.module06 .btn-wrapper .btn-concernwx {
+	position: absolute;
+	right: 0;
+	width: 316rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	background-color: rgba(0, 0, 0, .4);
+	border-radius: 10rpx;
+	text-align: center;
+	font-size: 30rpx;
+	color: #fff;
+}
+.module06 .btn-wrapper button::after {
+	border:none !important;
+}
+.module06 .bg {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}

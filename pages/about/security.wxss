@@ -1,0 +1,33 @@
+.page {
+	padding: 100rpx 30rpx 0rpx;
+	box-sizing: border-box;
+}
+.detail {
+	margin-bottom: 135rpx;
+}
+.detail .title {
+	margin-bottom: 50rpx;
+	font-size: 0;
+}
+.detail .title .title-icon {
+	width: 20rpx;
+	height: 20rpx;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ff9920;
+	margin-right: 30rpx;
+}
+.detail .title text {
+	font-size: 48rpx;
+	color: #ff9920;
+	display: inline-block;
+	vertical-align: middle;
+}
+.detail .detail-content {
+	font-size: 32rpx;
+	line-height: 60rpx;
+	text-indent: 60rpx;
+	color: #333;
+	text-align: justify;
+}
+

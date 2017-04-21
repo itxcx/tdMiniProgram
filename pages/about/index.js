@@ -3,7 +3,7 @@ var app = getApp()
 Page({
   data: {
 	isShowMore: false,
-	partners: [{
+	gdList: [{
 		img: '../../images/about_gd1.png',
 		desc: '“中国私募股权投资机构50强”第一名'
 	},{
@@ -36,6 +36,21 @@ Page({
   goPartners:  function() {
 	wx.navigateTo({
       url: '../about/partners'
+    });
+  },
+  goMoreSecurity:  function() {
+  	wx.navigateTo({
+      url: '../about/security'
+    });
+  },
+  goRegiste: function() {
+  	wx.navigateTo({
+      url: '../user/registe'
+    });
+  },
+  goConcernwx: function() {
+  	wx.navigateTo({
+      url: '../concernwx/index'
     });
   }
 })

@@ -1,16 +1,18 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/about/index",
-    "pages/about/background",
-    "pages/about/partners",
-    "pages/user/agreement",
+   
     "pages/user/login",
     "pages/user/registe",
+    "pages/user/agreement",
     "pages/user/forgetpwd",
     "pages/user/resetpwd",
+
+    "pages/about/index",
+    "pages/about/security",
+    "pages/about/background",
+    "pages/about/partners",
     "pages/concernwx/index"
-   
   ],
   "window":{
     "backgroundTextStyle":"light",
