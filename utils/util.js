@@ -1,21 +1,5 @@
 let md5 = require('./md5.js');
-function formatTime(date) {
-  var year = date.getFullYear()
-  var month = date.getMonth() + 1
-  var day = date.getDate()
-
-  var hour = date.getHours()
-  var minute = date.getMinutes()
-  var second = date.getSeconds()
-
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
-}
-
-function formatNumber(n) {
-  n = n.toString()
-  return n[1] ? n : '0' + n
-}
+let toolTip = require('./toolTip/toolTip.js');
 
 // 检查手机号码是否有效
 function checkPhoneNum(number) {
@@ -38,9 +22,9 @@ function request(params) {
 let domain = 'https://bbs5.tuandai.com';  //dev
 
 module.exports = {
-  formatTime: formatTime,
   checkPhoneNum: checkPhoneNum,
   request: request,
   domain: domain,
-  md5: md5
+  md5: md5, //md5加密库
+  toolTip: toolTip //提示组件
 }

@@ -1,0 +1,6 @@
+<template name="toolTip">
+    <view wx:if="{{_toolTip_.isShow}}"
+        class="tool-tip">
+        <text class="tip-text">{{_toolTip_.info}}</text>
+    </view>
+</template>

@@ -1,4 +1,6 @@
+<import src="../../utils/toolTip/toolTip.wxml"/>
 <view class="page">
+	<template is="toolTip" data="{{_toolTip_}}"/>
 	<view class="partners">
 		<view class="partner" wx:for="{{partners}}">
 			<view class="partnerImgBox">

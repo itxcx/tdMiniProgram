@@ -1,0 +1,20 @@
+.tool-tip {
+    font-size: 30rpx;
+    color: #fff;
+    width: 100%;
+    min-height: 70rpx;
+    background-color: #fd6040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+    line-height: 70rpx;
+}
+.tool-tip .tip-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 600rpx;
+}
+

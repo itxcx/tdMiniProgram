@@ -1,4 +1,6 @@
+<import src="../../utils/toolTip/toolTip.wxml"/>
 <view class="page">
+	<template is="toolTip" data="{{_toolTip_}}"/>
 	<view class="module01">
 		<view class="title">
 			<image class="quote l-quote" src="../../images/icon_quote.png" mode="aspectFit"></image>
@@ -72,7 +74,7 @@
 		</view>
 		<view class="module-content02">
 			<view class="warranty-item">
-				<view><text>{{plateData.formatBabyTotalAmount}}</text><text>千万</text></view>
+				<view><text>{{plateData.totalBabyPlanTotalAmount}}</text><text>{{plateData.totalBabyPlanTotalAmountUnit}}</text></view>
 				<text>质量保障专款</text>
 			</view>
 			<view class="warranty-item">

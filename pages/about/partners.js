@@ -3,7 +3,7 @@ Page({
 	data: {
 		partners: []
 	},
-	onLoad: function() {
+	getData: function() { //获取合作伙伴数据
 		let that = this;
 		let timestamp = +new Date();
 		let apiToken = util.md5('tuandai_xcx' + timestamp);
@@ -26,16 +26,22 @@ Page({
 				      partners: data.data
 				    });
 				} else {
-					// TODO: taost res.msg
+					util.toolTip.showToolTip(data.message || '网络异常，请稍后再试');
 				}
 			},
 			fail: function(err) {
-				// TODO: taost 网络异常，请稍后再试
+				util.toolTip.showToolTip('网络异常，请稍后再试');
 			},
 			complete: function() {
 				wx.hideLoading()
 			}
 
 		});
+	},
+	onLoad: function() {
+		// 初始化 提示工具
+    	util.toolTip.init(this);
+
+		this.getData();
 	}
 })
