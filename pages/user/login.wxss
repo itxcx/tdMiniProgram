@@ -11,6 +11,7 @@
 	height: 80rpx;
 	/*padding: 11rpx 0 11rpx 96rpx;*/
 	padding-left: 96rpx;
+	padding-right: 82rpx;
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
@@ -41,12 +42,22 @@
 	-webkit-transform: translateY(-50%); 
 	transform: translateY(-50%);
 }
+.login-form .toggle-pwd {
+	position: absolute;
+	right: 30rpx;
+	width: 50rpx;
+	height: 50rpx;
+	top: 50%;
+	margin-top: -25rpx;	
+	z-index: 99;
+}
 .login-form .eye-icon {
 	width: 30rpx;
 	height: 30rpx;
 	position: absolute;
-	right: 30rpx;
 	top: 50%;
+	left: 50%;
+	margin-left: -15rpx;
 	margin-top: -15rpx;	
 	z-index: 99;
 }

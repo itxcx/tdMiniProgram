@@ -7,10 +7,13 @@
 
 	  <view class="pwd-wrapper">
 	  	<image class="pwd-icon" src="../../images/icon_password_open.png" mode="aspectFit"></image>
-	  	<input type="text" password="{{!isShowPwd}}" bindinput="onPwdInput" placeholder="请输入登录密码" placeholder-style="color:#ccc" maxlength="16"/>
-
-	  	<image class="eye-icon eye-icon-on" wx:if="{{isShowPwd}}" data-type="on" bindtap="onToggleShowPwd" src="../../images/icon_visible.png" mode="aspectFit"></image>
-	  	<image class="eye-icon eye-icon-off" wx:else data-type="off" bindtap="onToggleShowPwd" src="../../images/icon_invisible.png" mode="aspectFit"></image>
+	  	<input type="text" password="{{!isShowPwd}}" bindinput="onPwdInput" placeholder="请输入登录密码" placeholder-style="color:#ccc" maxlength="16" focus="{{pwdFocus}}"/>
+		
+		<view class="toggle-pwd" bindtap="onTogglePwdType">
+			<image class="eye-icon eye-icon-on" wx:if="{{isShowPwd}}" data-type="on" src="../../images/icon_visible.png" mode="aspectFit"></image>
+	  		<image class="eye-icon eye-icon-off" wx:else data-type="off" src="../../images/icon_invisible.png" mode="aspectFit"></image>
+		</view>
+	  	
 	  </view>
  	</view>
 

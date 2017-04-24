@@ -33,20 +33,14 @@ Page({
       verificationCode: e.detail.value
     });
   },
-
-  onToggleShowPwd: function(e) {
-    let isShowPwd = false;
-
-    // 获取类型
-    let type = e.currentTarget.dataset && e.currentTarget.dataset.type;
-
-    // 点击显示密码
-    if('off' === type) isShowPwd = true;
-
+   // 是否显示密码
+  onTogglePwdType: function(e) {
     // 设置数据
     this.setData({
-      isShowPwd: isShowPwd
+      isShowPwd: !this.data.isShowPwd,
+      pwdFocus: true
     });
+
   },
   // 发送验证码
   onSendVerificateCode: function() {

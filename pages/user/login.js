@@ -3,7 +3,8 @@ Page({
     isShowPwd: false,
     isLogining: false,
     username: '',
-    pwd: ''
+    pwd: '',
+    pwdFocus: false
   },
   // 用户名输入绑定事件，获得用户名
   onUserNameInput: function(e) {
@@ -18,19 +19,13 @@ Page({
     });
   },
   // 是否显示密码
-  onToggleShowPwd: function(e) {
-    let isShowPwd = false;
-
-    // 获取类型
-    let type = e.currentTarget.dataset && e.currentTarget.dataset.type;
-
-    // 点击显示密码
-    if('off' === type) isShowPwd = true;
-
+  onTogglePwdType: function(e) {
     // 设置数据
     this.setData({
-      isShowPwd: isShowPwd
+      isShowPwd: !this.data.isShowPwd,
+      pwdFocus: true
     });
+
   },
   
   // 登录
