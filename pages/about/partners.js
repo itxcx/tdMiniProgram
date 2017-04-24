@@ -22,8 +22,6 @@ Page({
 			success: function(res){
 				let data = res.data;
 				if(200 === data.code) {
-
-					console.log( data.data);
 					that.setData({
 				      partners: data.data
 				    });

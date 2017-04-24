@@ -72,7 +72,7 @@
 		</view>
 		<view class="module-content02">
 			<view class="warranty-item">
-				<view><text>8</text><text>千万</text></view>
+				<view><text>{{plateData.formatBabyTotalAmount}}</text><text>千万</text></view>
 				<text>质量保障专款</text>
 			</view>
 			<view class="warranty-item">
@@ -128,19 +128,19 @@
 		</view>
 		<view class="module-content02">
 			<view class="performance-item">
-				<view><text>5</text>年</view>
+				<view><text>{{plateData.safeYear}}</text>年</view>
 				<view>安全运营时间</view>
 			</view>
 			<view class="performance-item">
-				<view><text>417</text>万</view>
+				<view><text>{{plateData.totalUser}}</text>万</view>
 				<view>注册用户数量</view>
 			</view>
 			<view class="performance-item">
-				<view><text>482</text>亿</view>
+				<view><text>{{plateData.totalAmount}}</text>亿</view>
 				<view>总交易金额</view>
 			</view>
 			<view class="performance-item">
-				<view><text>28</text>亿</view>
+				<view><text>{{plateData.totalInterest}}</text>亿</view>
 				<view>用户赚取收益</view>
 			</view>
 		</view>
