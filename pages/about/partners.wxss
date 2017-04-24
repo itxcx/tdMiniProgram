@@ -11,12 +11,31 @@
 	width: 33.333%;
 	display: inline-block;
 }
-.partner image {
+.partner .partnerImgBox {
 	width: 200rpx;
 	height: 110rpx;
+    border: 1rpx solid #e6e6e6;
+    border-radius: 5rpx;
+    text-align: center;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+    position: relative;
+}
+.partner .partnerImgBox image {
+	/*width: 198rpx;
+	height: 108rpx;
 	margin: auto;
-	margin-bottom: 20rpx;
+	margin-bottom: 20rpx;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%);
+	width: 90%;
 	display: block;
+
 }
 .partner .name {
 	font-size: 24rpx;
