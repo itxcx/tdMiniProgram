@@ -1,4 +1,4 @@
-@import "./utils/ToolTip/toolTip.wxss";
+@import "./utils/toolTip/toolTip.wxss";
 page {
 	height: 100%;
 }

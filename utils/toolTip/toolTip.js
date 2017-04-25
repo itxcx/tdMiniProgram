@@ -34,11 +34,10 @@ function showToolTip(text) {
             isShow: true
         }
     });
-    /*if (type === 'info' || type === 'success' || delay) {
-        setTimeout(function() {
-            closeToolTip();
-        }.bind(__this), delay || 3000);
-    }*/
+    
+    setTimeout(function() {
+        closeToolTip();
+    }.bind(__this), 2000);
 }
 
 module.exports = {
