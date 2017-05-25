@@ -1,5 +1,7 @@
+<import src="../../utils/toolTip/toolTip.wxml"/>
 <view class="page">
-  <view class="login-form">
+	<template is="toolTip" data="{{_toolTip_}}"/>
+  	<view class="login-form">
 	  <view class="username-wrapper">
 	  	<image class="username-icon" src="../../images/icon_phone.png" mode="aspectFit"></image>
 	  	<input type="text" bindinput="onUserNameInput" placeholder="请输入手机号码/用户名" placeholder-style="color:#ccc" maxlength="25" focus="{{true}}"/>
@@ -13,7 +15,6 @@
 			<image class="eye-icon eye-icon-on" wx:if="{{isShowPwd}}" data-type="on" src="../../images/icon_visible.png" mode="aspectFit"></image>
 	  		<image class="eye-icon eye-icon-off" wx:else data-type="off" src="../../images/icon_invisible.png" mode="aspectFit"></image>
 		</view>
-	  	
 	  </view>
  	</view>
 

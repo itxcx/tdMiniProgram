@@ -1,4 +1,6 @@
+<import src="../../utils/toolTip/toolTip.wxml"/>
 <view class="page">
+	<template is="toolTip" data="{{_toolTip_}}"/>
 	<view class="resetpwd-form">
 		<view class="pwd-wrapper">
 			<text class="label">新密码</text>

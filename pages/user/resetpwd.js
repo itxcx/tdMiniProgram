@@ -1,3 +1,4 @@
+let util = require('../../utils/util.js');
 Page({
   data: {
     pwd: '',
@@ -16,48 +17,95 @@ Page({
       rePwd: e.detail.value
     });
   },
-  onSubmit: function () {
-    let data = this.data;
-    let pwd = data.pwd;
-    let rePwd = data.rePwd;
-    let isRequesting = data.isRequesting;
+  onSubmit: function() {
+    let that = this;
+    let pwd = that.data.pwd;
+    let rePwd = that.data.rePwd;
     // 数据加载中
-    if(isRequesting) return;
+    if (that.data.isRequesting) return;
 
     // 验证密码
-    if('' === pwd) {
-      wx.showToast({
-        title: '请输入新密码'
-      });
+    if ('' === pwd) {
+      util.toolTip.showToolTip('请输入新密码');
       return;
-    } else if(pwd.length < 6) {
-      wx.showToast({
-        title: '密码至少应包含6位字符'
-      });
+    } else if (pwd.length < 6) {
+      util.toolTip.showToolTip('密码至少应包含6位字符');
       return;
     }
 
-    if('' === rePwd) {
-      wx.showToast({
-        title: '请输入密码'
-      });
+    if ('' === rePwd) {
+      util.toolTip.showToolTip('请确认密码');
       return;
     }
 
     //验证密码是否一致
-    if(pwd !== rePwd) {
-      wx.showToast({
-        title: '两次输入的密码不一致'
-      });
+    if (pwd !== rePwd) {
+      util.toolTip.showToolTip('两次输入的密码不一致');
       return;
-    } 
+    }
 
-    // TODO:请求接口
-    // wx.request();
+    wx.showLoading({
+      title: '加载中',
+      mask: true
+    });
+
     this.setData({
       isRequesting: true
     });
-    
-     
+
+    let resetObj = wx.getStorageSync('resetObj');
+    resetObj.password = pwd;
+    resetObj.confirmPassword = rePwd;
+    let timestamp = parseInt(+new Date() / 1000);
+    let apiToken = util.cryptoJS.MD5('tuandai_xcx' + timestamp);
+    // 加密
+    let param = util.encrypt(JSON.stringify(resetObj), timestamp);
+
+    util.request({
+      url: util.domain + '/user/forgot-password.html',
+      data: {
+        t: timestamp,
+        api_token: apiToken,
+        param: param
+      },
+      success: function(res) {
+        let data = res.data;
+        // 解密
+        data = util.decrypt(data.data, data.t);
+        if (200 === data.code) {
+          wx.showToast({
+            title: '密码更新成功',
+            success: function() {
+              setTimeout(function() {
+                // 密码更新成功之后回到首页
+                let pageLength = getCurrentPages().length;
+                wx.navigateBack({
+                  delta: pageLength
+                });
+
+                wx.hideLoading();
+              }, 1500);
+            }
+          });
+        } else {
+          util.toolTip.showToolTip(data.message || '网络异常，请稍后再试');
+          wx.hideLoading();
+        }
+      },
+      fail: function(err) {
+        util.toolTip.showToolTip('网络异常，请稍后再试');
+        wx.hideLoading();
+      },
+      complete: function() {
+        that.setData({
+          isRequesting: false
+        });
+      }
+    });
+
+  },
+
+  onShow: function() {
+    util.toolTip.init(this);
   }
 })

@@ -1,11 +1,13 @@
+<import src="../../utils/toolTip/toolTip.wxml"/>
 <view class="page">
+	<template is="toolTip" data="{{_toolTip_}}"/>
 	<view class="header">
 		<image class="header-bg" src="../../images/index_bg_top.png" mode="widthFix"></image>
 		<view class="header-content">
 			<view class="logined" wx:if="{{isLogined}}">
 				<text class="line-first">资产总额</text>
- 				<text class="line-second">{{assetInfo.total}}</text>
- 				<text class="line-third">（待收收益：{{assetInfo.receivedIncome}}）</text>
+ 				<text class="line-second">{{assetInfo.totalFund}}</text>
+ 				<text class="line-third">（待收收益：{{assetInfo.dueIncome}}）</text>
 			</view>
 			<view class="no-logined" wx:else>
 				<text>您还没有登录哦！</text>

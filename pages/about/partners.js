@@ -38,7 +38,7 @@ Page({
 
 		});
 	},
-	onLoad: function() {
+	onShow: function() {
 		// 初始化 提示工具
     	util.toolTip.init(this);
 
