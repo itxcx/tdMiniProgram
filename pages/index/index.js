@@ -28,15 +28,17 @@ Page({
   getData: function() { //获取用户数据
     let that = this;
 
+    let timestamp = parseInt(+new Date() / 1000);
+    let apiToken = util.cryptoJS.MD5('tuandai_xcx' + timestamp);
+    // 获取userToken
+    let userToken = wx.getStorageSync('userToken');
+
+    if (!userToken || userToken === '') return; //如果没有userToken则不请求数据
+
     wx.showLoading({
       title: '加载中',
       mask: true
     });
-  
-    let timestamp = parseInt(+new Date() /1000);
-    let apiToken = util.cryptoJS.MD5('tuandai_xcx' + timestamp);
-    // 获取userToken
-    let userToken = wx.getStorageSync('userToken');
 
     let param = {
       "user_token": userToken
@@ -60,7 +62,7 @@ Page({
             assetInfo: data.data,
             isLogined: true
           });
-        } else if(401 !== data.code) {
+        } else if (401 !== data.code) {
           util.toolTip.showToolTip(data.message || '网络异常，请稍后再试');
         }
       },
