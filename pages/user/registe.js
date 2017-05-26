@@ -195,7 +195,6 @@ Page({
       "invitePhone": inveter,
       "deviceName": sysInfo.system.split(" ")[0] == "Android" ? "Android" : "Ios"
     };
-    debugger
     // 加密
     param = util.encrypt(JSON.stringify(param), timestamp);
     util.request({
@@ -209,9 +208,7 @@ Page({
         let data = res.data;
         // 解密
         data = util.decrypt(data.data, data.t);
-        debugger
         if (200 === data.code) {
-
           wx.showToast({
             title: '注册成功',
             success: function() {
