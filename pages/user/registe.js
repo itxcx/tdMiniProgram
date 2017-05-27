@@ -1,4 +1,19 @@
 var util = require('../../utils/util.js');
+
+// 获取数据成功之后回到首页
+function onBackHome(userToken) {
+  // 保存token
+  wx.setStorageSync('userToken', userToken);
+  // 登录成功之后回到首页
+  let pageLength = getCurrentPages().length;
+  wx.navigateBack({
+    delta: pageLength
+  });
+
+  // 隐藏显示toast/loading
+  wx.hideLoading();
+}
+
 Page({
   data: {
     isShowPwd: false,
@@ -213,16 +228,11 @@ Page({
             title: '注册成功',
             success: function() {
               setTimeout(function() {
-                // 保存token
-                wx.setStorageSync('userToken', data.data.userToken);
-                // 注册成功之后回到首页
-                let pageLength = getCurrentPages().length;
-                wx.navigateBack({
-                  delta: pageLength
-                });
-
-                wx.hideLoading();
+                onBackHome(data.data.userToken);
               }, 1500);
+            },
+            fail: function() { //调用showToast失败
+              onBackHome(data.data.userToken);
             }
           });
         } else {
@@ -259,4 +269,4 @@ Page({
   onShow: function() {
     util.toolTip.init(this);
   }
-})
+});

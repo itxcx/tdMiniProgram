@@ -1,4 +1,17 @@
 let util = require('../../utils/util.js');
+
+// 获取数据成功之后回到首页
+function onBackHome() {
+  // 登录成功之后回到首页
+  let pageLength = getCurrentPages().length;
+  wx.navigateBack({
+    delta: pageLength
+  });
+
+  // 隐藏显示toast/loading
+  wx.hideLoading();
+}
+
 Page({
   data: {
     pwd: '',
@@ -77,14 +90,11 @@ Page({
             title: '密码更新成功',
             success: function() {
               setTimeout(function() {
-                // 密码更新成功之后回到首页
-                let pageLength = getCurrentPages().length;
-                wx.navigateBack({
-                  delta: pageLength
-                });
-
-                wx.hideLoading();
+                onBackHome();
               }, 1500);
+            },
+            fail: function() { //调用showToast失败
+              onBackHome();
             }
           });
         } else {
@@ -108,4 +118,4 @@ Page({
   onShow: function() {
     util.toolTip.init(this);
   }
-})
+});
