@@ -43,7 +43,9 @@ function decrypt(input, timestamp) {
 }
 
 // 请求域名
-let domain = 'https://bbs5.tuandai.com'; //dev
+// let domain = 'https://bbs5.tuandai.com'; //dev
+let domain = 'https://mywx.tdxueyuan.com'; //production
+
 
 module.exports = {
   checkPhoneNum: checkPhoneNum,

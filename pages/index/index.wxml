@@ -10,7 +10,7 @@
  				<text class="line-third">（待收收益：{{assetInfo.dueIncome}}）</text>
 			</view>
 			<view class="no-logined" wx:else>
-				<text>您还没有登录哦！</text>
+				<text>您还没有登录哦</text>
 				<view class="login-btn" bindtap="goLogin">登录/注册</view>
 			</view>
 		</view>		
