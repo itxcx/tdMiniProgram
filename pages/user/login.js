@@ -133,6 +133,18 @@ Page({
 
   //跳转至注册页面
   goRegister: function() {
+    let pages = getCurrentPages();
+
+    for (let index in pages) {
+      if ('pages/user/registe' == pages[index].route) { //如果路径层级存在，则返回
+        wx.navigateBack({
+          delta: pages.length - index - 1
+        });
+        return;
+      }
+    }
+
+    // 否则则直接跳转
     wx.navigateTo({
       url: '../user/registe'
     });
@@ -141,7 +153,7 @@ Page({
   //跳转至忘记密码页面 
   goResetPwd: function() {
     wx.navigateTo({
-      url: '../user/forgetpwd'
+      url: '../user/resetpwd'
     })
   },
 

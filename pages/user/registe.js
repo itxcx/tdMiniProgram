@@ -262,10 +262,23 @@ Page({
 
   // 跳转至登录页面
   goLogin: function() {
+    let pages = getCurrentPages();
+
+    for (let index in pages) {
+      if ('pages/user/login' == pages[index].route) { //如果路径层级存在，则返回
+        wx.navigateBack({
+          delta: pages.length - index - 1
+        });
+        return;
+      }
+    }
+
+    // 否则则直接跳转
     wx.navigateTo({
       url: '../user/login'
     });
   },
+  
   onShow: function() {
     util.toolTip.init(this);
   }

@@ -14,6 +14,10 @@
 	height: 90rpx;
 	background-color: #fff;
 	font-size: 30rpx;
+	margin-top: 30rpx;
+}
+.resetpwd-form > view:first-child {
+	margin-top: 0;
 }
 .resetpwd-form > view .label {
 	position: absolute;
@@ -31,9 +35,18 @@
 	transform: translateY(-50%);
 	z-index: 9;
 }
+.resetpwd-form > view .right {
+	position: absolute;
+	top: 50%;
+	margin-top: -15rpx;
+	right: 30rpx;
+	font-size: 30rpx;
+	color: #fab600;
+	z-index: 99;
+}
 
-.resetpwd-form .repwd-wrapper {
-	margin-top: 30rpx;
+.verification-wrapper .right text {
+	color: #fab600;
 }
 
 .submit-btn {
