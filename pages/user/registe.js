@@ -4,6 +4,10 @@ var util = require('../../utils/util.js');
 function onBackHome(userToken) {
   // 保存token
   wx.setStorageSync('userToken', userToken);
+  if (!getCurrentPages) {
+    util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
+    return;
+  }
   // 登录成功之后回到首页
   let pageLength = getCurrentPages().length;
   wx.navigateBack({
@@ -262,6 +266,10 @@ Page({
 
   // 跳转至登录页面
   goLogin: function() {
+    if (!getCurrentPages) {
+      util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
+      return;
+    }
     let pages = getCurrentPages();
 
     for (let index in pages) {
@@ -278,7 +286,7 @@ Page({
       url: '../user/login'
     });
   },
-  
+
   onShow: function() {
     util.toolTip.init(this);
   }

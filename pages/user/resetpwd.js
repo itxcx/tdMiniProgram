@@ -2,7 +2,12 @@ let util = require('../../utils/util.js');
 
 // 获取数据成功之后回到首页
 function onBackHome() {
-  // 登录成功之后回到首页
+  // 修改密码成功之后回到首页
+  if (!getCurrentPages) {
+    util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
+    return;
+  }
+  
   let pageLength = getCurrentPages().length;
   wx.navigateBack({
     delta: pageLength
@@ -185,7 +190,7 @@ Page({
     this.setData({
       isRequesting: true
     });
-   
+
 
     let resetObj = {
       "phone": phoneNum,
