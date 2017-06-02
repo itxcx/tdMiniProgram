@@ -1,6 +1,7 @@
 .page {
 	background-color: #faeec3;
 	height: 100%;
+	overflow:auto;
 }
 image {
 	display: block;

@@ -41,6 +41,12 @@
 		
 	<button class="registe-btn" bindtap="onRegister" loading="{{isRequesting}}">{{isRequesting? " ": ""}}注册</button>
 
-	<view class="agreement-wrapper">注册即表示您已同意<text bindtap="goAgreement">《团贷网服务协议》</text></view>
-	<view class="footer-wrapper">已有账号？<text bindtap="goLogin">马上登录</text></view>
+	<view class="agreement-wrapper">
+		<text>注册即表示您已同意</text>
+		<text class="btn-agreement" bindtap="goAgreement">《团贷网服务协议》</text>
+	</view>
+	<view class="footer-wrapper">
+		<text>已有账号？</text>
+		<text class="btn-login" bindtap="goLogin">马上登录</text>
+	</view>
 </view>

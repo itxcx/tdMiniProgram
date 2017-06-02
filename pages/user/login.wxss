@@ -77,7 +77,7 @@
 	border-radius: 8rpx;
 	text-align: center;
 	margin: auto;
-	margin-bottom: 32rpx;
+	margin-bottom: 20rpx;
 	display:block;
 }
 .btn-wrapper .logining:after, .btn-wrapper .login-btn:after {
@@ -88,16 +88,16 @@
 	float:left;
 	font-size: 24rpx;
 	color: #fab600;
-	height: 24rpx;
-	line-height: 24rpx;
+	height: 38rpx;
+	line-height: 38rpx;
 	border: none !important;
 }
 .btn-wrapper .resetpwd-btn {
 	float: right;
 	font-size: 24rpx;
 	color: #fab600;
-	height: 24rpx;
-	line-height: 24rpx;
+	height: 38rpx;
+	line-height: 38rpx;
 	border: none !important;
 }
 

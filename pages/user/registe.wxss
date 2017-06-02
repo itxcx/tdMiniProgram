@@ -75,23 +75,36 @@
 .registe-form > view .right {
 	position: absolute;
 	top: 50%;
-	margin-top: -15rpx;
+	margin-top: -20rpx;
 	right: 30rpx;
 	font-size: 30rpx;
 	color: #fab600;
 	z-index: 99;
-
+	line-height: 40rpx;
+	height: 40rpx;
 }
+
+.registe-form .verification-wrapper input {
+	padding-right: 130rpx;
+}
+
 .verification-wrapper .right text {
 	color: #fab600;
+	line-height: 40rpx;
+	height: 40rpx;
+	display: block;
+	padding-left: 30rpx;
+	border-left: 1rpx solid #e6e6e6;
 }
 .inviter-wrapper {
-	margin-top: 30rpx;
+	margin-top: 22rpx;
 	position: relative;
 }
 .inviter-wrapper > view {
 	padding-left: 30rpx;
 	font-size: 0;
+	height: 40rpx;
+	line-height: 40rpx;
 }
 .inviter-wrapper .invite-wrapper {
 	border-bottom: 1rpx solid #e6e6e6;
@@ -147,8 +160,8 @@
 	border-radius: 8rpx;
 	text-align: center;
 	margin: auto;
-	margin-top: 60rpx;
-	margin-bottom: 32rpx;
+	margin-top: 52rpx;
+	margin-bottom: 24rpx;
 	display:block;
 	border: none !important;
 }
@@ -158,20 +171,36 @@
 
 .agreement-wrapper {
 	color: #ccc;
-	font-size: 24rpx;
 	text-align: center;
-	margin-bottom: 80rpx;
+	margin-bottom: 64rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 0;
 }
 .agreement-wrapper text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24rpx;
+}
+.agreement-wrapper .btn-agreement {
 	color: #fab600;
 }
 
 .footer-wrapper {
 	color: #ccc;
-	font-size: 24rpx;
 	text-align: center;	
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 0;
+
 }
 .footer-wrapper text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24rpx;
+}
+
+.footer-wrapper .btn-login {
 	color: #fab600;
 }
 

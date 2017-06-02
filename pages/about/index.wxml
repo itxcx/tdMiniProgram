@@ -147,7 +147,7 @@
 			</view>
 		</view>
 		<view class="btn-wrapper">
-			<button class="btn-registe" bindtap="goRegiste">加入团贷网</button>
+			<button class="btn-registe" bindtap="goRegiste">注册团贷网账户</button>
 			<button class="btn-concernwx" bindtap="goConcernwx">微信关注团贷网</button>
 		</view>
 		<image class="bg" src="../../images/about_bg3.png" mode="widthFix"></image>	

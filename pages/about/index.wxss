@@ -73,7 +73,7 @@
 .module02 {
 	position: relative;
 	padding-top: 64rpx;
-	padding-bottom: 334rpx;
+	padding-bottom: 326rpx;
 	box-sizing: border-box;
 	background-color: #fff;
 }
@@ -132,7 +132,7 @@
 	display: block;
 }
 .module02 .module-content02 {
-	margin-bottom: 116rpx;
+	margin-bottom: 108rpx;
 	position: relative;
 	z-index: 99;
 }
@@ -153,6 +153,8 @@
 	font-size: 0;
 	z-index: 99;
 	text-align: center;
+	height: 46rpx;
+	line-height: 46rpx;
 }
 .module02 .module-content03 text {
 	color: #fab600;
@@ -258,10 +260,12 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
+	/*-webkit-transform: translate(-50%, -50%);*/
 	transform: translate(-50%, -50%);
 	z-index: 99;
 	font-size: 0;
+	height: 46rpx;
+	line-height: 46rpx;
 }
 .module03 .module-content03 > view text {
 	font-size: 30rpx;
@@ -274,7 +278,7 @@
 	display: inline-block;
 	margin-left: 10rpx;
 	width: 12rpx;
-	height: 21rpx;
+	height: 22rpx;
 }
 
 .module04 {
@@ -353,7 +357,7 @@
 
 .module05 {
 	position: relative;
-	padding: 100rpx 40rpx 454rpx;
+	padding: 100rpx 40rpx 446rpx;
 	box-sizing: border-box;
 	background-color: #fff;
 }
@@ -397,7 +401,7 @@
 	position: relative;
 	font-size: 0;
 	text-align: justify;
-	margin-bottom: 68rpx;
+	margin-bottom: 60rpx;
 }
 .module05 .module-content02 .security-item {
 	width: 33.333%;
@@ -426,6 +430,8 @@
 	font-size: 0;
 	z-index: 99;
 	text-align: center;
+	height: 46rpx;
+	line-height: 46rpx;
 }
 .module05 .module-content03 text {
 	color: #fab600;

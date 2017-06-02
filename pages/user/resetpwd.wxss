@@ -38,16 +38,26 @@
 .resetpwd-form > view .right {
 	position: absolute;
 	top: 50%;
-	margin-top: -15rpx;
+	margin-top: -20rpx;
 	right: 30rpx;
 	font-size: 30rpx;
 	color: #fab600;
 	z-index: 99;
+	line-height: 40rpx;
+	height: 40rpx;
+}
+
+.resetpwd-form .verification-wrapper input {
+	padding-right: 180rpx;
 }
 
 .verification-wrapper .right text {
 	color: #fab600;
+	line-height: 40rpx;
+	height: 40rpx;
+	display:block;
 }
+
 
 .submit-btn {
 	width: 690rpx;
