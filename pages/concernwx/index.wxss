@@ -16,6 +16,10 @@ image {
 	width: 661rpx;
 	margin:auto;
 }
+.icon03 {
+	margin:auto;
+	width: 93.6%;
+}
 .icon04 {
 	margin-top: 100rpx;
 }
