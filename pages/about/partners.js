@@ -8,7 +8,7 @@ Page({
 		let timestamp = parseInt(+new Date() / 1000);
 		let apiToken = util.cryptoJS.MD5('tuandai_xcx' + timestamp);
 
-		wx.showLoading({
+		wx.showLoading && wx.showLoading({
 			title: '加载中',
 			mask: true
 		});
@@ -35,7 +35,7 @@ Page({
 				util.toolTip.showToolTip('网络异常，请稍后再试');
 			},
 			complete: function() {
-				wx.hideLoading()
+				wx.hideLoading && wx.hideLoading()
 			}
 
 		});

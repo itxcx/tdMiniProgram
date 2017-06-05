@@ -31,11 +31,16 @@ Page({
     let timestamp = parseInt(+new Date() / 1000);
     let apiToken = util.cryptoJS.MD5('tuandai_xcx' + timestamp);
     // 获取userToken
-    let userToken = wx.getStorageSync('userToken');
+    let userToken;
+    try {
+      userToken = wx.getStorageSync('userToken');
+    } catch (e) {
+      util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
+    }
 
     if (!userToken || userToken === '') return; //如果没有userToken则不请求数据
 
-    wx.showLoading({
+    wx.showLoading && wx.showLoading({
       title: '加载中',
       mask: true
     });
@@ -70,13 +75,14 @@ Page({
         util.toolTip.showToolTip('网络异常，请稍后再试');
       },
       complete: function() {
-        wx.hideLoading()
+        wx.hideLoading && wx.hideLoading()
       }
     });
   },
   onShow: function() {
-    this.getData();
     // 初始化 提示工具
     util.toolTip.init(this);
+
+    this.getData();
   }
 })

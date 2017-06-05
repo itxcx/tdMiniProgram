@@ -38,6 +38,7 @@
 	color: #fff;
 	border: 1rpx solid #fff;
 	border-radius: 10rpx;
+	box-sizing: border-box;
 }
 
 .header-content .logined {

@@ -2,21 +2,22 @@ let util = require('../../utils/util.js');
 
 // 获取数据成功之后回到首页
 function onBackHome(userToken) {
-  // 保存token
-  wx.setStorageSync('userToken', userToken);
-  if (!getCurrentPages) {
+  try {
+    // 保存token
+    wx.setStorageSync('userToken', userToken);
+  } catch (e) {
     util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
     return;
   }
-  // 登录成功之后回到首页
 
-  let pageLength = getCurrentPages().length;
+  // 登录成功之后回到首页
+  let pageLength = getCurrentPages && getCurrentPages().length;
   wx.navigateBack({
     delta: pageLength
   });
 
   // 隐藏显示toast/loading
-  wx.hideLoading();
+  wx.hideLoading && wx.hideLoading();
 }
 
 Page({
@@ -81,7 +82,7 @@ Page({
       isLogining: true
     });
 
-    wx.showLoading({
+    wx.showLoading && wx.showLoading({
       title: '加载中',
       mask: true
     });
@@ -108,6 +109,11 @@ Page({
         // 解密
         data = util.decrypt(data.data, data.t);
         if (200 === data.code) {
+          if (!wx.showToast) {
+            onBackHome(data.data.userToken);
+            return;
+          }
+
           wx.showToast({
             title: '登录成功',
             success: function() {
@@ -121,12 +127,12 @@ Page({
           });
         } else {
           util.toolTip.showToolTip(data.message || '网络异常，请稍后再试');
-          wx.hideLoading();
+          wx.hideLoading && wx.hideLoading();
         }
       },
       fail: function(err) {
         util.toolTip.showToolTip('网络异常，请稍后再试');
-        wx.hideLoading();
+        wx.hideLoading && wx.hideLoading();
       },
       complete: function() {
         that.setData({
@@ -142,7 +148,7 @@ Page({
       util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
       return;
     }
-    
+
     let pages = getCurrentPages();
     for (let index in pages) {
       let route = pages[index].route || pages[index].__route__; //兼容route
