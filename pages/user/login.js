@@ -144,9 +144,9 @@ Page({
     }
     
     let pages = getCurrentPages();
-
     for (let index in pages) {
-      if ('pages/user/registe' == pages[index].route) { //如果路径层级存在，则返回
+      let route = pages[index].route || pages[index].__route__; //兼容route
+      if ('pages/user/registe' == route) { //如果路径层级存在，则返回
         wx.navigateBack({
           delta: pages.length - index - 1
         });

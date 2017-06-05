@@ -270,10 +270,11 @@ Page({
       util.toolTip.showToolTip('您的微信版本较低，请升级微信版本后查看');
       return;
     }
+    
     let pages = getCurrentPages();
-
     for (let index in pages) {
-      if ('pages/user/login' == pages[index].route) { //如果路径层级存在，则返回
+      let route = pages[index].route || pages[index].__route__; //兼容route
+      if ('pages/user/login' == route) { //如果路径层级存在，则返回
         wx.navigateBack({
           delta: pages.length - index - 1
         });
