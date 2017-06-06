@@ -63,7 +63,7 @@ Page({
     if ('' === username) {
       util.toolTip.showToolTip('请输入用户名');
       return;
-    } else if (username.length > 25) {
+    } else if (username.length > 26) {
       util.toolTip.showToolTip('请输入正确的用户名');
       return;
     }

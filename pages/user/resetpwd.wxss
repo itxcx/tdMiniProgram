@@ -23,9 +23,12 @@
 	position: absolute;
 	left: 30px;
 	top: 50%;
-	margin-top: -15rpx;
 	color: #333;
 	z-index: 99;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	-webkit-transform: translateY(-50%); 
+	transform: translateY(-50%);
 }
 .resetpwd-form > view input {
 	position: relative;

@@ -4,7 +4,7 @@
   	<view class="login-form">
 	  <view class="username-wrapper">
 	  	<image class="username-icon" src="../../images/icon_phone.png" mode="aspectFit"></image>
-	  	<input type="text" bindinput="onUserNameInput" placeholder="请输入手机号码/用户名" placeholder-style="color:#ccc" maxlength="25" focus="{{true}}"/>
+	  	<input type="text" bindinput="onUserNameInput" placeholder="请输入手机号码/用户名" placeholder-style="color:#ccc" maxlength="26" focus="{{true}}"/>
 	  </view>
 
 	  <view class="pwd-wrapper">

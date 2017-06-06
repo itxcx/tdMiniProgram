@@ -249,6 +249,9 @@
 	width: 288rpx;
 	margin: auto;
 }
+.module03 .gd:nth-child(4) .gd-desc {
+	height: 72rpx;
+}
 .module03 .module-content03 {
 	position: relative;
 	
@@ -329,7 +332,7 @@
 	margin-bottom: 100rpx;
 }
 .module04 .module-content02 .warranty-item > view {
-	
+	height: 78rpx;
 	text-align: center;
 }
 .module04 .module-content02 .warranty-item > view text {
